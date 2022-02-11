@@ -75,7 +75,7 @@ const Home = () => {
                 <div>
                     <div className='mt-3 flex'>
                         {/* <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"> */}
-                        <input type="text" class="form-control" name="search" value={res?.searchText} placeholder='Search Item' onChange={searchChange} />
+                        <input type="text" class="form-control input-border" name="search" value={res?.searchText} placeholder='Search Item' onChange={searchChange} />
                         {
                             res?.searchText != "" && (
                                 <div className='iconDesign cursor-pointer' onClick={clearData}>
@@ -106,8 +106,10 @@ const Home = () => {
                                                             </div>
                                                             <div className="col-md-6">
                                                                 <img src={item.cloudinaryImageId} alt={item.name} style={{ width: '150px', height: '150px' }} />
-                                                                <div className='justify-content-center flex'>
-                                                                    <input type="button" className='buttonDesign' name="addButton" value="Add" onClick={() => buttonClick(item.name)} />
+                                                                <div className='justify-content-center flex mt-2'>
+                                                                    <button type="button" className='buttonDesign' name="addButton" onClick={() => buttonClick(item.name)}>
+                                                                        Add <i className='fa fa-plus font-13'></i>
+                                                                        </button>
                                                                 </div>
                                                             </div>
                                                         </div>

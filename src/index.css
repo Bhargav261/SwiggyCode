@@ -12,42 +12,6 @@ code {
     monospace;
 }
 
-.navBody{
-  background-color: black;
-  color: white;
-  height: 50px;
-}
-
-.navigation{
-  display: flex;
-  justify-content: center;
-}
-
-a{
-  text-decoration: none;
-  margin-top: 12px;
-  margin-left: 25px;
-  font-weight: 400;
-  color: white;
-  cursor: pointer;
-}
-
-a.active{
-  color: rgb(61 64 238);
-}
-
-.viewContent{text-align: center;
-  margin-top: 260px;
-}
-
-.viewDetails{
-  background: black;
-  color: white;
-  padding: 8px;
-  border-radius: 11px;
-  font-size: 12px;
-}
-
 .flex{
   display: flex;
 }
@@ -80,4 +44,12 @@ a.active{
 
 .cursor-pointer{
   cursor: pointer;
+}
+
+.font-13{
+  font-size: 13px;
+}
+
+.input-border{
+  border-radius: 9px !important;
 }
