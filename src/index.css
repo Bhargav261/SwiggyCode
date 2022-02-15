@@ -18,11 +18,13 @@ code {
 
 .itemBorder{
   border: 1px solid #c6c0c0;  
-  width: 500px;
+  width: 100%;
   padding-left: 32px;
   padding-right: 32px;
   padding-top: 17px;
   border-radius : 15px;
+  max-height: 86vh;
+  overflow: auto;
 }
 
 .borderbtm{
@@ -52,4 +54,31 @@ code {
 
 .input-border{
   border-radius: 9px !important;
+}
+
+
+/* width */
+.scrollWidth::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.scrollWidth::-webkit-scrollbar-track {
+  background: #c6c0c0; 
+  border-radius: 5px;
+}
+ 
+/* Handle */
+.scrollWidth::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+.scrollWidth::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.w-100{
+  width: 100%;
 }
